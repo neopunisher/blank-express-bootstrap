@@ -1,7 +1,8 @@
 doctype 5
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+html(lang="en")
+  include inc/header
   body
-    block content
+    include inc/nav
+    section.container
+      block content
+    include inc/footer
